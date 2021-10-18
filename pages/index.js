@@ -2,6 +2,7 @@
 // import React from "react";
 // ^^ Behövs ej i NextJs
 import MeetupList from "../components/meetups/MeetupList";
+import Layout from "../components/layout/Layout";
 
 const dummy = [
   {
@@ -23,7 +24,11 @@ const dummy = [
 ];
 
 function HomePage() {
-  return <MeetupList meetups={dummy} />;
+  return (
+    <>
+        <MeetupList meetups={dummy} />
+    </>
+  );
 }
 
 export default HomePage;
